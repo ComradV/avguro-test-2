@@ -28,38 +28,44 @@
         <p>Для подтверждения вашего аккаунта вам нужно заполнить все поля, подтвердить почтовый ящик и телефон, а также
           загружить сканы ваших документов.</p>
       </div>
-      <div class="file-container column-6">
-        <img src="images/upload.svg">
-        <div class="action-details">
-          <p class="action">Загрузить скан страницы с фотографией</p>
-          <p class="details">Размер файла не более 5Мб</p>
+      <form id="file-input">
+        <div class="file-container column-6">
+          <div class="img-container">
+            <img src="images/upload.svg">
+          </div>
+          <div class="file-info">
+            <div class="action-details">
+              <!-- <label class="filestyler__file filestyler__plus"> -->
+              <label class="action">
+                <span>Загрузить скан страницы с фотографией</span>
+                <input id="inp" type="file" name="file[]" class="style-input">
+              </label>
+              <p class="details">Размер файла не более 5Мб</p>
+            </div>
+            <div class="status">
+              <p class="status-checked"></p>
+            </div>
+          </div>
         </div>
-        <p class="status status-checked"></p>
-      </div>
-      <div class="file-container column-6">
-        <img src="images/wait.svg">
-        <div class="action-details">
-          <p class="action">Загрузить скан страницы с фотографией</p>
-          <p class="details">Размер файла не более 5Мб</p>
-        </div>
-        <p class="status status-declined"></p>
-      </div>
-      <div class="file-container column-6">
-        <img src="images/wait.svg">
-        <div class="action-details">
-          <p class="action">Загрузить скан страницы с фотографией</p>
-          <p class="details">Размер файла не более 5Мб</p>
-        </div>
-        <p class="status"></p>
-      </div>
-      <div class="file-container column-6">
-        <img src="images/ok.svg">
-        <div class="action-details">
-          <p class="action">Загрузить скан страницы с фотографией</p>
-          <p class="details">Размер файла не более 5Мб</p>
-        </div>
-        <p class="status status-checking"></p>
-      </div>
+        <div class="file-container column-6">
+            <div class="img-container">
+              <img src="images/upload.svg">
+            </div>
+            <div class="file-info">
+              <div class="action-details">
+                <!-- <label class="filestyler__file filestyler__plus"> -->
+                <label class="action">
+                    <span>Загрузить скан страницы с пропиской</span>
+                    <input id="inp" type="file" name="file[]" class="style-input">
+                </label>
+                <p class="details">Размер файла не более 5Мб</p>
+              </div>
+              <div class="status">
+                <p class="status-checked"></p>
+              </div>
+            </div>
+          </div>
+        </form>
     </div>
   </section>
   <script src="js/script.js"></script>
